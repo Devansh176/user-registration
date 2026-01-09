@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity, Alert, ActivityIndicator } from 'react-native';
 import axios from 'axios';
 
-// Replace with your actual machine IP (found via ipconfig)
 const API_URL = "http://192.168.1.111:8080/api/users"; 
 
 type User = {
@@ -113,10 +112,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 10,
     flexDirection: 'row',
-    justifyContent: 'space-between', // Pushes delete button to the right
+    justifyContent: 'space-between',
     alignItems: 'center',
-    elevation: 2, // Shadow for Android
-    shadowColor: '#000', // Shadow for iOS
+    elevation: 2, 
+    shadowColor: '#000', 
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.2,
     shadowRadius: 1.41,
