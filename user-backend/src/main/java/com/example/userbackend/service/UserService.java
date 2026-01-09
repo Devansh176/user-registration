@@ -24,7 +24,7 @@ public class UserService {
         return user;
     }
 
-    public User getUserById(int id) {
+    public User getUserById(Integer id) {
         return userRepository.findById(id).orElse(null);
     }
 
@@ -34,6 +34,15 @@ public class UserService {
 
     public User getUserByEmail(String email) {
         return userRepository.findByEmail(email);
+    }
+
+    @Transactional
+    public Boolean deleteUser(Integer id) {
+        if(userRepository.existsById(id)) {
+            userRepository.deleteById(id);
+            return true;
+        }
+        return false;
     }
 
     @Transactional

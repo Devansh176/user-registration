@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import AddUserScreen from '@/components/AddUserScreen'; // Importing your new component
-
+import AddUserScreen from '@/components/screens/AddUserScreen';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>

@@ -6,7 +6,7 @@ const AddUserScreen = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
 
-    const API_URL = "http://192.168.1.111:8080/api/user"; 
+    const API_URL = "http://192.168.1.111:8080/api/users"; 
 
     const handleSubmit = async () => {
         if (!name || !email) {
